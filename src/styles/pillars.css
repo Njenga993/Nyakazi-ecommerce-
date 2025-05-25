@@ -1,0 +1,82 @@
+.nyakazi-pillars-section {
+  padding: 6rem 0;
+  position: relative;
+  background-color: white;
+  overflow: hidden;
+}
+
+.pillars-decor {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.pillar-leaf-1 {
+  top: 20%;
+  right: 5%;
+  animation-delay: 2s;
+}
+
+/* Continue with all the other styles… */
+.pillar-leaf-2 {
+  top: 10%;
+  left: 5%;
+  animation-delay: 3s;
+}
+.pillar-leaf-3 {
+  bottom: 10%;
+  right: 5%;
+  animation-delay: 4s;
+}
+.pillar-leaf-4 {
+  bottom: 20%;
+  left: 5%;
+  animation-delay: 5s;
+}
+.pillar-card {
+  position: relative;
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.card-image {
+  position: relative;
+  height: 180px; /* or your preferred height */
+  width: 100%;
+  overflow: hidden;
+  z-index: 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: relative; /* important */
+  z-index: 1;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0,0,0,0.3), transparent);
+  z-index: 2;
+  pointer-events: none;
+}
