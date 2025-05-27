@@ -1,15 +1,23 @@
 /* src/styles/LandingPage.css */
+
 .landing-page {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #333333;
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+  max-width: 100%;
 }
 
 /* Hero Section */
 .hero-section {
-  padding: 10px;
-  margin: 0;
+  padding: 0 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
   background-color: #f8f9fa;
   position: relative;
 }
@@ -190,219 +198,7 @@
   line-height: 1.6;
 }
 
-/* Products Section */
-.products-section {
-  padding: 80px 0;
-  background-color: #f8f9fa;
-}
 
-.product-card {
-  background-color: white;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
-  position: relative;
-  height: 100%;
-}
-
-.product-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-}
-
-.product-badge {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  background-color: #2e7d32;
-  color: white;
-  padding: 5px 12px;
-  border-radius: 50px;
-  font-size: 0.8rem;
-  font-weight: 600;
-  z-index: 2;
-}
-
-.product-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  transition: all 0.5s ease;
-}
-
-.product-card:hover .product-image {
-  transform: scale(1.05);
-}
-
-.product-details {
-  padding: 20px;
-}
-
-.product-details h3 {
-  font-size: 1.3rem;
-  margin-bottom: 10px;
-  color: #333;
-}
-
-.product-description {
-  color: #666;
-  margin-bottom: 15px;
-  font-size: 0.95rem;
-}
-
-.product-link {
-  color: #2e7d32;
-  font-weight: 600;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  transition: all 0.3s ease;
-}
-
-.product-link i {
-  margin-left: 5px;
-  transition: all 0.3s ease;
-}
-
-.product-link:hover {
-  color: #1b5e20;
-}
-
-.product-link:hover i {
-  transform: translateX(5px);
-}
-
-.btn-outline-primary {
-  color: #2e7d32;
-  border-color: #2e7d32;
-  font-weight: 600;
-  padding: 10px 25px;
-  border-radius: 50px;
-}
-
-.btn-outline-primary:hover {
-  background-color: #2e7d32;
-  border-color: #2e7d32;
-}
-
-/* Testimonials Section */
-.testimonials-section {
-  padding: 80px 0;
-  background-color: white;
-}
-
-.testimonial-card {
-  background-color: #f8f9fa;
-  padding: 30px;
-  border-radius: 10px;
-  height: 100%;
-}
-
-.testimonial-rating {
-  color: #ffc107;
-  margin-bottom: 15px;
-}
-
-.testimonial-text {
-  font-style: italic;
-  color: #555;
-  margin-bottom: 20px;
-  line-height: 1.6;
-}
-
-.testimonial-author {
-  display: flex;
-  align-items: center;
-}
-
-.author-avatar {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-right: 15px;
-}
-
-.testimonial-author h4 {
-  font-size: 1.1rem;
-  margin-bottom: 0;
-  color: #333;
-}
-
-.testimonial-author p {
-  color: #666;
-  font-size: 0.9rem;
-  margin-bottom: 0;
-}
-
-/* CTA Section */
-.cta-section {
-  padding: 100px 0;
-  background-color: #2e7d32;
-  color: white;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.cta-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('/images/cta-bg.jpg');
-  background-size: cover;
-  background-position: center;
-  opacity: 0.2;
-  z-index: 0;
-}
-
-.cta-content {
-  position: relative;
-  z-index: 1;
-}
-
-.cta-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  font-weight: 700;
-}
-
-.cta-section p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
-  opacity: 0.9;
-}
-
-.cta-buttons .btn {
-  padding: 12px 30px;
-  border-radius: 50px;
-  font-weight: 600;
-  transition: all 0.3s ease;
-}
-
-.cta-buttons .btn-light {
-  background-color: white;
-  color: #2e7d32;
-}
-
-.cta-buttons .btn-light:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
-}
-
-.cta-buttons .btn-outline-light {
-  border-color: white;
-  color: white;
-}
-
-.cta-buttons .btn-outline-light:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  transform: translateY(-3px);
-}
 
 /* Responsive Styles */
 @media (max-width: 991px) {

@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
             <div className="col-12 text-center">
               <p className="mb-0">
                 <span className="highlight-text">New!</span> Organic Spices and Herbs now available.{" "}
-                <a href="#vegetable" className="announcement-link">Shop now</a>
+                <a><Link to="/products" className="highlight-text" data-text="Products"> Click Me! </Link></a>
               </p>
             </div>
           </div>
@@ -26,10 +26,7 @@ const Navbar: React.FC = () => {
           <Link to="/" className="navbar-brand">
             <div className="brand-container">
               <img className="brand-logo" src="/logo_processed.jpg" alt="Nyakazi Organics" />
-              <div className="leaf-animation">
-                <span className="leaf leaf-1"></span>
-                <span className="leaf leaf-2"></span>
-              </div>
+
             </div>
           </Link>
 
@@ -48,20 +45,9 @@ const Navbar: React.FC = () => {
           {/* Navigation Links */}
           <div className="collapse navbar-collapse" id="navbarContent">
             <ul className="navbar-nav mx-auto animated-nav">
-              <li className="nav-item"><Link to="/" className="nav-link active" data-text="Home">Home</Link></li>
+              <li className="nav-item"><Link to="/home" className="nav-link active" data-text="Home">Home</Link></li>
               <li className="nav-item"><a className="nav-link" href="#about" data-text="About">About</a></li>
-              <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" href="#vegetable" id="vegetableDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-text="Products">
-                  Products
-                </a>
-                <ul className="dropdown-menu organic-dropdown" aria-labelledby="vegetableDropdown">
-                  <li><a className="dropdown-item" href="#dried">Sun-Dried Vegetables</a></li>
-                  <li><a className="dropdown-item" href="#fresh">Fresh Vegetables</a></li>
-                  <li><a className="dropdown-item" href="#powders">Vegetable Powders</a></li>
-                  <li><hr className="dropdown-divider" /></li>
-                  <li><a className="dropdown-item" href="#packages">Gift Packages</a></li>
-                </ul>
-              </li>
+              <li className="nav-item"><Link to="/products" className="nav-link active" data-text="Products">Products</Link></li>
               <li className="nav-item"><a className="nav-link" href="#pillars" data-text="Values">Values</a></li>
               <li className="nav-item"><a className="nav-link" href="#contact" data-text="Contact">Contact</a></li>
               <li className="nav-item"><Link to="/blog" className="nav-link" data-text="Blog">Blog</Link></li>
@@ -111,6 +97,11 @@ const Navbar: React.FC = () => {
           </form>
         </div>
       </div>
+        <div className="pillars-decor">
+            <div className="floating-leaf pillar-leaf-1"></div>
+              <div className="floating-leaf pillar-leaf-2"></div>
+            <div className="floating-leaf pillar-leaf-3"></div>
+          </div>
     </header>
   );
 };

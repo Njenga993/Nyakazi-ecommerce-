@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import '../styles/HeroCarousel.css';
 import managuImg from '/Managu-600x400.png';
 import terereImg from '/Terere-600x400.png';
-import spiderPlantImg from '/Spider-Plant.png';
+import spiderPlantImg from '/spices.jpg';
 
 const slides = [
   {
@@ -13,7 +13,7 @@ const slides = [
     primaryText: "Contact Us",
     primaryLink: "mailto:nyakaziorganics@gmail.com",
     secondaryText: "View Products",
-    secondaryLink: "#products",
+    secondaryLink: "Products",
     image: managuImg,
     alt: "Fresh Managu"
   },
@@ -27,7 +27,7 @@ const slides = [
     primaryText: "Order Now",
     primaryLink: "mailto:nyakaziorganics@gmail.com",
     secondaryText: "Learn More",
-    secondaryLink: "#process",
+    secondaryLink: "#about",
     image: terereImg,
     alt: "Organic Terere"
   },
@@ -39,7 +39,7 @@ const slides = [
     primaryText: "Partner With Us",
     primaryLink: "mailto:nyakaziorganics@gmail.com",
     secondaryText: "Our Mission",
-    secondaryLink: "#impact",
+    secondaryLink: "#pillars",
     image: spiderPlantImg,
     alt: "Spider Plant"
   }

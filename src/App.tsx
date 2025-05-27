@@ -7,6 +7,9 @@ import { CartProvider } from './context/CartContext'
 import Footer from './components/Footer'
 import { useEffect, useState } from 'react'
 
+
+
+
 function App() {
   const location = useLocation();
   const [showLayout, setShowLayout] = useState(true);
@@ -24,6 +27,7 @@ function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="/home" element={<HomePage />} />
           <Route path="/blog" element={<BlogPage />} />
+          {/* Add more routes as needed */}
         </Routes>
         {showLayout && <Footer />}
       </div>

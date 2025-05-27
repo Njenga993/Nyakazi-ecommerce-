@@ -53,7 +53,7 @@
 
 .card-image {
   position: relative;
-  height: 180px; /* or your preferred height */
+  height: 200px; /* or your preferred height */
   width: 100%;
   overflow: hidden;
   z-index: 0;
