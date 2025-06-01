@@ -1,4 +1,5 @@
 // src/components/AboutSection.tsx
+
 import React, { useEffect, useRef } from 'react';
 import styled, { keyframes } from 'styled-components';
 import { FaLeaf, FaSeedling, FaHandsHelping, FaPlayCircle } from 'react-icons/fa';

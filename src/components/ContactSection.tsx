@@ -1,13 +1,14 @@
-import React, { useEffect } from 'react';
+import * as React from 'react';
+import { useEffect } from 'react';
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaSyncAlt, FaDirections, FaPaperPlane, FaShareAlt, FaMapMarkedAlt, FaUser, FaTag, FaComment } from 'react-icons/fa';
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube, FaTiktok, FaWhatsapp, FaTwitter } from 'react-icons/fa';
-import '../styles/ContactSection.css'; // Import the CSS styles for the contact section
+import '../styles/ContactSection.css';
 
 interface ContactCardProps {
-  icon: JSX.Element;
+  icon: React.ReactNode;
   title: string;
   description: string;
-  backContent: JSX.Element;
+  backContent: React.ReactNode;
 }
 
 const ContactSection = () => {
@@ -38,7 +39,6 @@ const ContactSection = () => {
       card.addEventListener('mouseleave', () => handleCardLeave(card));
     });
 
-    // Intersection Observer for scroll animations
     const observerOptions = {
       threshold: 0.1,
       rootMargin: '0px 0px -50px 0px'
@@ -52,7 +52,6 @@ const ContactSection = () => {
       });
     }, observerOptions);
 
-    // Observe all animated elements
     const animatedElements = document.querySelectorAll('.animate-on-scroll');
     animatedElements.forEach(el => observer.observe(el));
 
@@ -65,7 +64,7 @@ const ContactSection = () => {
     };
   }, []);
 
-  const ContactCard = ({ icon, title, description, backContent }: ContactCardProps) => (
+  const ContactCard: React.FC<ContactCardProps> = ({ icon, title, description, backContent }) => (
     <div className="contact-card">
       <div className="card-inner">
         <div className="card-front">
@@ -88,7 +87,6 @@ const ContactSection = () => {
 
   return (
     <section id="contact" className="nyakazi-contact-section">
-      {/* Decorative elements */}
       <div className="contact-decor">
         <div className="floating-leaf leaf-1"></div>
         <div className="floating-leaf leaf-2"></div>
@@ -96,7 +94,6 @@ const ContactSection = () => {
       </div>
 
       <div className="container-fluid px-lg-5">
-        {/* Section header with animated underline */}
         <div className="row">
           <div className="col-12 text-center">
             <div className="contact-header animate-on-scroll fade-in-up">
@@ -111,9 +108,7 @@ const ContactSection = () => {
           </div>
         </div>
 
-        {/* Contact cards with flip effect and incoming animations */}
         <div className="row g-4 mt-3">
-          {/* Card 1: Visit Us - Slide in from bottom */}
           <div className="col-lg-4 col-md-6">
             <div className="animate-on-scroll slide-in-bottom" style={{ animationDelay: '0.2s' }}>
               <ContactCard
@@ -136,7 +131,6 @@ const ContactSection = () => {
             </div>
           </div>
 
-          {/* Card 2: Call Us - Slide in from right */}
           <div className="col-lg-4 col-md-6">
             <div className="animate-on-scroll slide-in-right" style={{ animationDelay: '0.4s' }}>
               <ContactCard
@@ -163,7 +157,6 @@ const ContactSection = () => {
             </div>
           </div>
 
-          {/* Card 3: Email Us - Slide in from bottom */}
           <div className="col-lg-4 col-md-6">
             <div className="animate-on-scroll slide-in-bottom" style={{ animationDelay: '0.6s' }}>
               <ContactCard
@@ -187,9 +180,7 @@ const ContactSection = () => {
           </div>
         </div>
 
-        {/* Main contact content */}
         <div className="row g-4 mt-4">
-          {/* Contact form - Slide in from left */}
           <div className="col-lg-6">
             <div className="animate-on-scroll slide-in-left" style={{ animationDelay: '0.8s' }}>
               <div className="contact-form-wrapper">
@@ -197,35 +188,43 @@ const ContactSection = () => {
                   <h3>Send Us a Message</h3>
                   <p>We'll get back to you as soon as possible</p>
                 </div>
-                <form className="contact-form" id="contactForm">
-                  <div className="form-floating mb-3">
-                    <input type="text" className="form-control" id="nameInput" placeholder="Your Name" />
-                    <label htmlFor="nameInput"><FaUser className="input-icon" /> Your Name</label>
-                  </div>
-                  <div className="form-floating mb-3">
-                    <input type="email" className="form-control" id="emailInput" placeholder="Your Email" />
-                    <label htmlFor="emailInput"><FaEnvelope className="input-icon" /> Your Email</label>
-                  </div>
-                  <div className="form-floating mb-3">
-                    <input type="text" className="form-control" id="subjectInput" placeholder="Subject" />
-                    <label htmlFor="subjectInput"><FaTag className="input-icon" /> Subject</label>
-                  </div>
-                  <div className="form-floating mb-3">
-                    <textarea className="form-control" id="messageInput" placeholder="Your Message" style={{ height: '150px' }}></textarea>
-                    <label htmlFor="messageInput"><FaComment className="input-icon" /> Your Message</label>
-                  </div>
-                  <div className="text-center">
-                    <button type="submit" className="submit-btn">
-                      <span className="btn-text">Send Message</span>
-                      <span className="btn-icon"><FaPaperPlane /></span>
-                    </button>
-                  </div>
-                </form>
+               <form 
+  className="contact-form"
+  action="https://formsubmit.co/kamaukelvin077@gmail.com"  // Replace this with your actual email
+  method="POST"
+>
+  <div className="form-floating mb-3">
+    <input type="text" className="form-control" name="name" id="nameInput" required />
+    <label htmlFor="nameInput"><FaUser className="input-icon" /> Your Name</label>
+  </div>
+
+  <div className="form-floating mb-3">
+    <input type="email" className="form-control" name="email" id="emailInput" required />
+    <label htmlFor="emailInput"><FaEnvelope className="input-icon" /> Your Email</label>
+  </div>
+
+  <div className="form-floating mb-3">
+    <input type="text" className="form-control" name="subject" id="subjectInput" />
+    <label htmlFor="subjectInput"><FaTag className="input-icon" /> Subject</label>
+  </div>
+
+  <div className="form-floating mb-3">
+    <textarea className="form-control" name="message" id="messageInput" style={{ height: '150px' }} required></textarea>
+    <label htmlFor="messageInput"><FaComment className="input-icon" /> Your Message</label>
+  </div>
+
+  <div className="text-center">
+    <button type="submit" className="submit-btn">
+      <span className="btn-text">Send Message</span>
+      <span className="btn-icon"><FaPaperPlane /></span>
+    </button>
+  </div>
+</form>
+
               </div>
             </div>
           </div>
 
-          {/* Map and social - Slide in from right */}
           <div className="col-lg-6">
             <div className="animate-on-scroll slide-in-right" style={{ animationDelay: '1s' }}>
               <div className="map-container">
@@ -249,7 +248,6 @@ const ContactSection = () => {
                   </div>
                 </div>
 
-                {/* Social media links */}
                 <div className="social-media-container">
                   <h3><FaShareAlt /> Connect With Us</h3>
                   <p>Follow us on social media for updates, tips, and special offers</p>
