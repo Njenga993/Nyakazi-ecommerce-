@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
             <div className="col-12 text-center">
               <p className="mb-0">
                 <span className="highlight-text">New!</span> Organic Spices and Herbs now available.{" "}
-                <a><Link to="/Nyakazi-ecommerce-/products" className="highlight-text" data-text="Products"> Shop Now! </Link></a>
+                <a><Link to="/products" className="highlight-text" data-text="Products"> Shop Now! </Link></a>
               </p>
             </div>
           </div>
@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
         <div className="container-fluid px-lg-5">
           <Link to="/" className="navbar-brand">
             <div className="brand-container">
-              <img className="brand-logo" src="public/logo_processed.jpg" alt="Nyakazi Organics" />
+              <img className="brand-logo" src="./logo_processed.jpg" alt="Nyakazi Organics" />
 
             </div>
           </Link>
@@ -47,10 +47,10 @@ const Navbar: React.FC = () => {
             <ul className="navbar-nav mx-auto animated-nav">
               <li className="nav-item"><Link to="/Nyakazi-ecommerce-" className="nav-link active" data-text="Home">Home</Link></li>
               <li className="nav-item"><a className="nav-link" href="#about" data-text="About">About</a></li>
-              <li className="nav-item"><Link to="/Nyakazi-ecommerce-/products" className="nav-link active" data-text="Products">Products</Link></li>
+              <li className="nav-item"><Link to="/products" className="nav-link active" data-text="Products">Products</Link></li>
               <li className="nav-item"><a className="nav-link" href="#pillars" data-text="Values">Values</a></li>
               <li className="nav-item"><a className="nav-link" href="#contact" data-text="Contact">Contact</a></li>
-              <li className="nav-item"><Link to="/Nyakazi-ecommerce-/blog" className="nav-link" data-text="Blog">Blog</Link></li>
+              <li className="nav-item"><Link to="/blog" className="nav-link" data-text="Blog">Blog</Link></li>
             </ul>
 
             {/* Utilities: Search, Social, Cart */}
