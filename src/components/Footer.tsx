@@ -45,7 +45,7 @@ const Footer = () => {
   <h3 className="footer-heading">Quick Links</h3>
   <ul className="footer-links">
     <li>
-      <Link to="/" className="footer-link">
+      <Link to="/Nyakazi-ecommerce-" className="footer-link">
         <i className="fas fa-leaf link-icon"></i> Home
       </Link>
     </li>
@@ -114,22 +114,22 @@ const Footer = () => {
               <div className="footer-gallery">
                 <div className="gallery-grid">
                   <div className="gallery-item">
-                    <img src="/Managu-600x400.png" alt="Managu" className="gallery-img" />
+                    <img src="./Managu-600x400.png" alt="Managu" className="gallery-img" />
                   </div>
                   <div className="gallery-item">
-                    <img src="/Terere-600x400.png" alt="Terere" className="gallery-img" />
+                    <img src="./FreshMushroom.jpeg" alt="Terere" className="gallery-img" />
                   </div>
                   <div className="gallery-item">
-                    <img src="/Spider-Plant.png" alt="Spider Plant" className="gallery-img" />
+                    <img src="./Spider-Plant.png" alt="Spider Plant" className="gallery-img" />
                   </div>
                   <div className="gallery-item">
-                    <img src="/Spider-Plant.png" alt="Spider Plant" className="gallery-img" />
+                    <img src="./spices.jpg" alt="Spider Plant" className="gallery-img" />
                   </div>
                   <div className="gallery-item">
-                    <img src="/Terere-600x400.png" alt="Terere" className="gallery-img" />
+                    <img src="./FreshMushroom.jpeg" alt="Terere" className="gallery-img" />
                   </div>
                   <div className="gallery-item">
-                    <img src="/Managu-600x400.png" alt="Managu" className="gallery-img" />
+                    <img src="./spices.jpg" alt="Managu" className="gallery-img" />
                   </div>
                 </div>
               </div>

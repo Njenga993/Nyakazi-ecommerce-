@@ -158,7 +158,7 @@ const AboutSection = () => {
               <VideoText>Watch Our Story</VideoText>
             </VideoOverlay>
             <VideoThumbnail 
-              src="/Managu-600x400.png" 
+              src="./Managu-600x400.png" 
               alt="Nyakazi farming and production process"
             />
           </VideoWrapper>
