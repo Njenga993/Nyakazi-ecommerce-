@@ -2,37 +2,39 @@ import React, { useEffect, useState } from 'react';
 import ProductCard from '../components/ProductCard';
 import CartPopup from '../components/CartPopup';
 import CheckoutPopup from '../components/CheckoutPopup';
+import ProductDetailsModal from '../components/ProductDetailsModal';
 import { Product } from '../types/Product';
 import '../styles/ProductsPage.css';
 
-
 const dummyProducts: Product[] = [
-  // Fresh Vegetables
-  { id: 1, name: 'Fresh Kale', category: 'Fresh Vegetables', price: 40, image: '/images/kale.jpg', description: 'Organic fresh kale' },
-  { id: 2, name: 'Spinach', category: 'Fresh Vegetables', price: 50, image: '/images/spinach.jpg', description: 'Rich in iron and fiber' },
-  { id: 3, name: 'Lettuce', category: 'Fresh Vegetables', price: 60, image: '/images/lettuce.jpg', description: 'Crisp and refreshing' },
-  { id: 4, name: 'Tomatoes', category: 'Fresh Vegetables', price: 70, image: '/images/tomatoes.jpg', description: 'Juicy organic tomatoes' },
-  { id: 5, name: 'Cabbage', category: 'Fresh Vegetables', price: 55, image: '/images/cabbage.jpg', description: 'Locally grown cabbage' },
+// Fresh Vegetables
+{ id: 1, name: 'Fresh Managu (Black Nightshade) , Net: 1kg', category: 'Fresh Vegetables', price: 200, image: '/Terere-600x400.png', description: 'Rich in vitamins A and C for immunity support. Promotes healthy digestion and detoxification.' },
+{ id: 2, name: 'Fresh Terere (Amaranth) , Net: 1kg', category: 'Fresh Vegetables', price: 200, image: '/terere fresh.png', description: 'High in iron to prevent anemia. Loaded with antioxidants for glowing skin.' },
+{ id: 3, name: 'Fresh Sagaa (Spider Plant) , Net: 1kg', category: 'Fresh Vegetables', price: 200, image: '/Spider-Plant.png', description: 'Helps regulate blood sugar. Excellent fiber source for gut health.' },
+{ id: 4, name: 'Fresh Spinach , Net: 1kg', category: 'Fresh Vegetables', price: 150, image: '/Spider-Plant.png', description: 'Rich in iron and folate for energy. Strengthens bones with natural calcium.' },
+{ id: 5, name: 'Fresh Oyster Mushrooms , Net: 250g', category: 'Fresh Vegetables', price: 250, image: '/FreshMushroom.jpeg', description: 'Boosts immunity with beta-glucans. Low in calories, great for weight control.' },
 
-  // Dried Vegetables
-  { id: 6, name: 'Dried Kale', category: 'Dried Vegetables', price: 80, image: '/images/dried-kale.jpg', description: 'Sun-dried kale flakes' },
-  { id: 7, name: 'Dried Spinach', category: 'Dried Vegetables', price: 85, image: '/images/dried-spinach.jpg', description: 'Dried spinach powder' },
-  { id: 8, name: 'Dried Carrots', category: 'Dried Vegetables', price: 90, image: '/images/dried-carrots.jpg', description: 'Sweet dried carrots' },
-  { id: 9, name: 'Dried Cabbage', category: 'Dried Vegetables', price: 75, image: '/images/dried-cabbage.jpg', description: 'Shredded dried cabbage' },
-  { id: 10, name: 'Dried Onions', category: 'Dried Vegetables', price: 95, image: '/images/dried-onions.jpg', description: 'Crispy dried onions' },
+// Dried Vegetables
+{ id: 6, name: 'Dried Managu (Black Nightshade) , Net: 50g', category: 'Dried Vegetables',price: 200, image: '/Managu-600x400.png', description: 'Sun-dried and nutrient-packed. Long shelf life for convenient use.' },
+{ id: 7, name: 'Dried Spinach , Net: 50g', category: 'Dried Vegetables', price: 150, image: '/Spider-Plant.png', description: 'Retains essential iron and calcium. Ideal for quick, healthy meals.' },
+{ id: 8, name: 'Dried Terere (Amaranth) , Net: 50g', category: 'Dried Vegetables', price: 200, image: '/Terere-600x400.png', description: 'Loaded with Vitamin A for vision and skin. Provides lysine for body repair.' },
+{ id: 9, name: 'Dried Sagaa (Spider Plant) , Net: 50g', category: 'Dried Vegetables', price: 200, image: '/Spider-Plant.png', description: 'Naturally preserves nutrients. Supports digestion and appetite.' },
+{ id: 10, name: 'Dried Oyster Mushrooms , Net: 50g', category: 'Dried Vegetables', price: 300, image: '/MUSH-Picsart-BackgroundRemover.jpg', description: 'High in protein and fiber. Contains powerful antioxidants for cell health.' },
 
-  // Spices & Herbs
-  { id: 11, name: 'Dried Rosemary', category: 'Spices & Herbs', price: 60, image: '/images/rosemary.jpg', description: 'Fragrant rosemary leaves' },
-  { id: 12, name: 'Dried Oregano', category: 'Spices & Herbs', price: 65, image: '/images/oregano.jpg', description: 'Aromatic oregano' },
-  { id: 13, name: 'Ginger Powder', category: 'Spices & Herbs', price: 70, image: '/images/ginger.jpg', description: 'Strong ginger flavor' },
-  { id: 14, name: 'Turmeric Powder', category: 'Spices & Herbs', price: 75, image: '/images/turmeric.jpg', description: 'Bright turmeric root powder' },
-  { id: 15, name: 'Mixed Herbs', category: 'Spices & Herbs', price: 100, image: '/images/mixed-herbs.jpg', description: 'Blend of organic herbs' },
+// Spices & Herbs
+{ id: 11, name: 'Rosemary Pure Ground , Net: 50g', category: 'Spices & Herbs', price: 90, image: '/spices.jpg', description: 'Improves memory and focus. Fights inflammation and supports joint health.' },
+{ id: 12, name: 'Garlic Pure Ground , Net: 50g', category: 'Spices & Herbs', price: 120, image: '/spices.jpg', description: 'Naturally lowers blood pressure. Boosts the immune system.' },
+{ id: 13, name: 'Ginger Pure Ground , Net: 50g', category: 'Spices & Herbs', price: 100, image: '/spices.jpg', description: 'Relieves nausea and supports digestion. Anti-inflammatory and immunity booster.' },
+{ id: 14, name: 'Cinnamon Pure Ground , Net: 50g', category: 'Spices & Herbs', price: 110, image: '/spices.jpg', description: 'Balances blood sugar levels. Packed with powerful antioxidants.' },
+{ id: 15, name: 'Cayenne Pepper Pure Ground , Net: 50g', category: 'Spices & Herbs', price: 90, image: '/spices.jpg', description: 'Speeds up metabolism and burns fat. Clears sinuses and boosts circulation.' },
+
 ];
 
 const ProductsPage: React.FC = () => {
   const [cart, setCart] = useState<Product[]>([]);
   const [showCart, setShowCart] = useState(false);
   const [showCheckout, setShowCheckout] = useState(false);
+  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
   const [categoryFilter, setCategoryFilter] = useState('All');
 
   useEffect(() => {
@@ -62,7 +64,7 @@ const ProductsPage: React.FC = () => {
     const message = `Hello, I'm ${formData.name}. I'd like to order:\n\n${cart.map(p =>
       `- ${p.name} x${p.quantity} = Ksh ${p.price * (p.quantity || 1)}`
     ).join('\n')}\n\nTotal: Ksh ${cart.reduce((sum, p) => sum + (p.price * (p.quantity || 1)), 0)}\n\nDeliver to: ${formData.location}\nWhatsApp: ${formData.whatsapp}`;
-    
+
     const encoded = encodeURIComponent(message);
     const whatsappURL = `https://wa.me/+254703642280?text=${encoded}`;
     window.open(whatsappURL, '_blank');
@@ -97,7 +99,7 @@ const ProductsPage: React.FC = () => {
             key={product.id}
             product={product}
             onAddToCart={handleAddToCart}
-            onShowDetails={() => alert(product.description)} // Optional: Replace with a popup if needed
+            onShowDetails={() => setSelectedProduct(product)}
           />
         ))}
       </div>
@@ -122,6 +124,14 @@ const ProductsPage: React.FC = () => {
         <CheckoutPopup
           onClose={() => setShowCheckout(false)}
           onSubmit={handleCheckoutSubmit}
+        />
+      )}
+
+      {selectedProduct && (
+        <ProductDetailsModal
+          product={selectedProduct}
+          onClose={() => setSelectedProduct(null)}
+          onAddToCart={handleAddToCart}
         />
       )}
     </div>

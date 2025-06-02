@@ -1,0 +1,101 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(252, 250, 250);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #130f0f;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.modal-close {
+  position: absolute;
+  top: 0.7rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-image {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.modal-price {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.modal-add-btn {
+  padding: 0.5rem 1rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.modal-category {
+  color: #777;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+.modal-description {
+  color: #0e0d0d;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  line-height: 1.4;
+}
+.modal-title {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+.modal-title:hover {
+  color: #4caf50;
+  text-decoration: underline;
+}
+.modal-title:active {
+  color: #388e3c;
+}
+.modal-title:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.5);
+}
+.modal-title:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.5);
+}
+.modal-title:focus:not(:focus-visible) {
+  box-shadow: none;
+}
+.modal-title:focus:not(:focus-visible) {
+  box-shadow: none;
+}
+.modal-title:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.5);
+}
+.modal-title:focus:not(:focus-visible) {
+  box-shadow: none;
+}
