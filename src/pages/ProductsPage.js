@@ -28,7 +28,7 @@ const dummyProducts = [
         name: 'Fresh Sagaa (Spider Plant) , Net: 1kg',
         category: 'Fresh Vegetables',
         price: 200,
-        image: `${import.meta.env.BASE_URL}./Spider-plant.png`,
+        image: `${import.meta.env.BASE_URL}./Spider-Plant.png`,
         description: 'Helps regulate blood sugar. Excellent fiber source for gut health.'
     },
     {
@@ -36,7 +36,7 @@ const dummyProducts = [
         name: 'Fresh Spinach , Net: 1kg',
         category: 'Fresh Vegetables',
         price: 150,
-        image: `${import.meta.env.BASE_URL}./Spider-plant.png`,
+        image: `${import.meta.env.BASE_URL}./Spider-Plant.png`,
         description: 'Rich in iron and folate for energy. Strengthens bones with natural calcium.'
     },
     {
@@ -61,7 +61,7 @@ const dummyProducts = [
         name: 'Dried Spinach , Net: 50g',
         category: 'Dried Vegetables',
         price: 150,
-        image: `${import.meta.env.BASE_URL}./Spider-plant.png`,
+        image: `${import.meta.env.BASE_URL}./Spider-Plant.png`,
         description: 'Retains essential iron and calcium. Ideal for quick, healthy meals.'
     },
     {
@@ -77,7 +77,7 @@ const dummyProducts = [
         name: 'Dried Sagaa (Spider Plant) , Net: 50g',
         category: 'Dried Vegetables',
         price: 200,
-        image: `${import.meta.env.BASE_URL}./Spider-plant.png`,
+        image: `${import.meta.env.BASE_URL}./Spider-Plant.png`,
         description: 'Naturally preserves nutrients. Supports digestion and appetite.'
     },
     {

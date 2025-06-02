@@ -34,7 +34,7 @@ const Footer = () => {
                 <a href="https://www.instagram.com/nyakaziorganics/" className="footer-social-link" target="_blank" rel="noopener noreferrer">
                   <i className="fab fa-instagram"></i>
                 </a>
-                <a href="#" className="footer-social-link" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.facebook.com/profile.php?id=61573147688980" className="footer-social-link" target="_blank" rel="noopener noreferrer">
                   <i className="fab fa-facebook"></i>
                 </a>
               </div>
