@@ -37,7 +37,7 @@ function App() {
       <div className="App">
         {showLayout && <Navbar />}
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/Nyakazi-ecommerce-" element={<HomePage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/products" element={<ProductsPage />} />
           {/* More routes can go here */}
