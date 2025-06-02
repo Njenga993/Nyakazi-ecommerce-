@@ -12,7 +12,7 @@ const BlogSection = () => {
         {
             id: 1,
             title: 'Sustainable Farming Practices',
-            image: '/Managu-600x400.png',
+            image: './Managu-600x400.png',
             excerpt: 'Discover the methods we use to promote sustainability in agriculture.',
             content: `
         <p>At Nyakazi Organics, we believe sustainable farming is not just a practice but a way of life. Our methods focus on:</p>
@@ -27,13 +27,13 @@ const BlogSection = () => {
             date: '2023-09-15',
             author: 'Jane Muthoni',
             tags: ['farming', 'sustainability'],
-            link: '/blog/sustainable-farming',
+            link: './blog/sustainable-farming',
             featured: true
         },
         {
             id: 2,
             title: 'Health Benefits of Indigenous Vegetables',
-            image: '/Terere-600x400.png',
+            image: './Terere-600x400.png',
             excerpt: 'Learn about the nutritional advantages of incorporating indigenous vegetables into your diet.',
             content: `
         <p>Indigenous vegetables like terere, managu, and saga are nutritional powerhouses:</p>
@@ -51,12 +51,12 @@ const BlogSection = () => {
             date: '2023-08-22',
             author: 'Dr. Wanjiku Kariuki',
             tags: ['nutrition', 'health'],
-            link: '/blog/indigenous-vegetables'
+            link: './blog/indigenous-vegetables'
         },
         {
             id: 3,
             title: 'Community Engagement Initiatives',
-            image: '/women.jpeg',
+            image: './women.jpeg',
             excerpt: 'Explore how Nyakazi Organics is making a difference in local communities.',
             content: `
         <p>Our community programs include:</p>
@@ -77,7 +77,7 @@ const BlogSection = () => {
         {
             id: 4,
             title: 'Seasonal Planting Guide',
-            image: '/terere fresh.png',
+            image: './terere fresh.png',
             excerpt: 'Learn what to plant each season for optimal organic yields.',
             content: `
         <h4>Our Seasonal Planting Calendar</h4>
@@ -96,12 +96,12 @@ const BlogSection = () => {
             date: '2023-06-18',
             author: 'Samuel Njoroge',
             tags: ['farming', 'seasonal'],
-            link: '/blog/seasonal-planting'
+            link: './blog/seasonal-planting'
         },
         {
             id: 5,
             title: 'Organic Pest Control Methods',
-            image: '/v1.jpg',
+            image: './v1.jpg',
             excerpt: 'Natural ways to protect your crops without harmful chemicals.',
             content: `
         <p>Our effective organic pest control strategies:</p>
@@ -117,7 +117,7 @@ const BlogSection = () => {
             date: '2023-05-05',
             author: 'Grace Wambui',
             tags: ['farming', 'pest-control'],
-            link: '/blog/organic-pest-control'
+            link: './blog/organic-pest-control'
         }
     ];
     const categories = [

@@ -6,20 +6,20 @@ const PillarsSection = () => {
                                 title: "Mission",
                                 icon: "fas fa-bullseye",
                                 description: "To Continuously Deliver Quality Organic Products Focused On Customer Needs.",
-                                image: "/mission.jpeg",
+                                image: "./mission.jpeg",
                                 delay: 100,
                             },
                             {
                                 title: "Vision",
                                 icon: "fas fa-eye",
                                 description: "To be the lead provider of local, organic and sustainable food solutions.",
-                                image: "/vision.jpeg",
+                                image: "./vision.jpeg",
                                 delay: 200,
                             },
                             {
                                 title: "Objectives",
                                 icon: "fas fa-check-circle",
-                                image: "/objectives.png",
+                                image: "./objectives.png",
                                 delay: 300,
                                 objectives: [
                                     "Provide healthy food options for busy scheduled individuals",

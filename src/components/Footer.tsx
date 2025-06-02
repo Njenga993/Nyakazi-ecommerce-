@@ -20,7 +20,7 @@ const Footer = () => {
             <div className="col-lg-3 col-md-6">
               <div className="footer-brand mb-4">
                 <a href="index.html">
-                  <img src="public/logo_processed.jpg" alt="Nyakazi Organics" className="footer-logo" />
+                  <img src="./logo_processed.jpg" alt="Nyakazi Organics" className="footer-logo" />
                 </a>
               </div>
               <p className="footer-tagline">

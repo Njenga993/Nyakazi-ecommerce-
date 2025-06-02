@@ -8,7 +8,7 @@ import '../styles/ProductsPage.css';
 
 const dummyProducts: Product[] = [
 // Fresh Vegetables
-{ id: 1, name: 'Fresh Managu (Black Nightshade) , Net: 1kg', category: 'Fresh Vegetables', price: 200, image: './Terere-600x400.png', description: 'Rich in vitamins A and C for immunity support. Promotes healthy digestion and detoxification.' },
+{ id: 1, name: 'Fresh Managu (Black Nightshade) , Net: 1kg', category: 'Fresh Vegetables', price: 200, image: '../Terere-600x400.png', description: 'Rich in vitamins A and C for immunity support. Promotes healthy digestion and detoxification.' },
 { id: 2, name: 'Fresh Terere (Amaranth) , Net: 1kg', category: 'Fresh Vegetables', price: 200, image: './terere fresh.png', description: 'High in iron to prevent anemia. Loaded with antioxidants for glowing skin.' },
 { id: 3, name: 'Fresh Sagaa (Spider Plant) , Net: 1kg', category: 'Fresh Vegetables', price: 200, image: './Spider-Plant.png', description: 'Helps regulate blood sugar. Excellent fiber source for gut health.' },
 { id: 4, name: 'Fresh Spinach , Net: 1kg', category: 'Fresh Vegetables', price: 150, image: './Spider-Plant.png', description: 'Rich in iron and folate for energy. Strengthens bones with natural calcium.' },
