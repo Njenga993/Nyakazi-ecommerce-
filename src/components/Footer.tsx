@@ -45,7 +45,7 @@ const Footer = () => {
   <h3 className="footer-heading">Quick Links</h3>
   <ul className="footer-links">
     <li>
-      <Link to="/Nyakazi-ecommerce-" className="footer-link">
+      <Link to="/Nyakazi-ecommerce-/" className="footer-link">
         <i className="fas fa-leaf link-icon"></i> Home
       </Link>
     </li>

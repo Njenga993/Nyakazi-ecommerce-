@@ -85,7 +85,7 @@ const dummyProducts = [
         name: 'Dried Oyster Mushrooms , Net: 50g',
         category: 'Dried Vegetables',
         price: 300,
-        image: `${import.meta.env.BASE_URL}../MUSH-Picsart-BackgroundRemover.jpg`,
+        image: `${import.meta.env.BASE_URL}./MUSH-Picsart-BackgroundRemover.jpg`,
         description: 'High in protein and fiber. Contains powerful antioxidants for cell health.'
     },
     // Spices & Herbs

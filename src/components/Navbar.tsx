@@ -45,7 +45,7 @@ const Navbar: React.FC = () => {
           {/* Navigation Links */}
           <div className="collapse navbar-collapse" id="navbarContent">
             <ul className="navbar-nav mx-auto animated-nav">
-              <li className="nav-item"><Link to="/Nyakazi-ecommerce-" className="nav-link active" data-text="Home">Home</Link></li>
+              <li className="nav-item"><Link to="/Nyakazi-ecommerce-/" className="nav-link active" data-text="Home">Home</Link></li>
               <li className="nav-item"><a className="nav-link" href="#about" data-text="About">About</a></li>
               <li className="nav-item"><Link to="/products" className="nav-link active" data-text="Products">Products</Link></li>
               <li className="nav-item"><a className="nav-link" href="#pillars" data-text="Values">Values</a></li>
