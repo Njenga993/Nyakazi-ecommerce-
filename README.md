@@ -1,54 +1,120 @@
-# React + TypeScript + Vite
+# 🌿 Nyakazi Organics E-Commerce
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Vite](https://img.shields.io/badge/Vite-%233B3B3B.svg?style=for-the-badge&logo=vite&logoColor=FFD62E)
+![React](https://img.shields.io/badge/React-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![Status](https://img.shields.io/badge/Live%20Demo-Coming%20Soon-orange?style=for-the-badge)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛍️ Project Overview
 
-## Expanding the ESLint configuration
+**Nyakazi Organics** is a vibrant, eco-friendly e-commerce web app that helps users explore and purchase **organic fresh vegetables, dried greens, herbs, and spices** grown locally in Kenya. It offers a smooth shopping experience with local cart management, animated product previews, and a unique WhatsApp-based checkout process.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## ✨ Key Features
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- ✅ Modern, responsive UI with an **organic aesthetic**
+- 🛒 Add to cart, view cart, remove items — all powered via `localStorage`
+- 📱 Checkout via **WhatsApp message** with order summary + delivery info
+- 🔍 Filter products by category: Fresh Vegetables, Dried Vegetables, Spices & Herbs
+- 💡 Detailed pop-up modal for product descriptions and benefits
+- ⚡ Lightning-fast performance thanks to **Vite**
+- 🌱 Built with **React + TypeScript** for scalability and maintainability
+- 🎨 Smooth animations using `Framer Motion` and clean layout with SCSS modules
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 🧪 Demo
+
+> **Live demo coming soon...**
+
+You can include a GIF or screenshot here showing:
+
+- Homepage / Landing Hero
+- Animated Product List
+- Add-to-cart interaction
+- Checkout popup with form
+- WhatsApp redirect message
+
+---
+
+## 📂 Folder Structure
+
+```bash
+src/
+│
+├── assets/               # Images and icons
+├── components/           # Reusable UI components (Navbar, Footer, ProductCard, etc.)
+├── context/              # Cart context for global cart state
+├── pages/
+│   ├── HomePage.tsx
+│   ├── ProductsPage.tsx
+│   └── ...
+├── styles/               # Global & module-based styles
+├── types/                # TypeScript interfaces and types
+├── App.tsx               # Root app structure
+├── main.tsx              # Entry point
+└── data/                 # Dummy product data (optional)
+
+⚙️ Installation & Setup
+# 1. Clone the repository
+git clone https://github.com/your-username/nyakazi-ecommerce.git
+cd nyakazi-ecommerce
+
+# 2. Install dependencies
+npm install
+
+# 3. Start the development server
+npm run dev
+
+# App will run at http://localhost:5173/
+📤 WhatsApp Checkout Logic
+Upon checkout, the app:
+
+Collects name, delivery location, and WhatsApp number
+
+Builds a product list from the cart
+
+Opens WhatsApp with a pre-filled message like:
+Hello Nyakazi! I'd like to order:
+- 2x Fresh Terere (Ksh 100)
+- 1x Ginger Ground (Ksh 70)
+
+Delivery to: Gikambura
+Name: Mary Njeri
+Contact: 07XXXXXXXX
+
+🔧 Tech Stack
+React 18
+
+Vite
+
+TypeScript
+
+Framer Motion
+
+Lucide Icons
+
+SCSS Modules
+
+WhatsApp Web API
+
+💚 Contribution
+Want to contribute? Feel free to fork and submit a PR! We're looking for help with:
+
+🌐 Multi-language support
+
+📦 Backend integration
+
+💳 M-Pesa checkout (future)
+
+🧪 Unit and integration tests
+
+📄 License
+This project is licensed under the MIT License — see the LICENSE file for details.
+
+👩🏽‍🌾 Built by Njenga Kamau
+Fresh from the soil to your soul. Organic. Local. Pure.
