@@ -7,27 +7,131 @@ import { Product } from '../types/Product';
 import '../styles/ProductsPage.css';
 
 const dummyProducts: Product[] = [
-// Fresh Vegetables
-{ id: 1, name: 'Fresh Managu (Black Nightshade) , Net: 1kg', category: 'Fresh Vegetables', price: 200, image: '../Terere-600x400.png', description: 'Rich in vitamins A and C for immunity support. Promotes healthy digestion and detoxification.' },
-{ id: 2, name: 'Fresh Terere (Amaranth) , Net: 1kg', category: 'Fresh Vegetables', price: 200, image: './terere fresh.png', description: 'High in iron to prevent anemia. Loaded with antioxidants for glowing skin.' },
-{ id: 3, name: 'Fresh Sagaa (Spider Plant) , Net: 1kg', category: 'Fresh Vegetables', price: 200, image: './Spider-Plant.png', description: 'Helps regulate blood sugar. Excellent fiber source for gut health.' },
-{ id: 4, name: 'Fresh Spinach , Net: 1kg', category: 'Fresh Vegetables', price: 150, image: './Spider-Plant.png', description: 'Rich in iron and folate for energy. Strengthens bones with natural calcium.' },
-{ id: 5, name: 'Fresh Oyster Mushrooms , Net: 250g', category: 'Fresh Vegetables', price: 250, image: './FreshMushroom.jpeg', description: 'Boosts immunity with beta-glucans. Low in calories, great for weight control.' },
+ // Fresh Vegetables
+  {
+    id: 1,
+    name: 'Fresh Managu (Black Nightshade) , Net: 1kg',
+    category: 'Fresh Vegetables',
+    price: 200,
+    image: `${import.meta.env.BASE_URL}images/managu-600x400.png`,
+    description: 'Rich in vitamins A and C for immunity support. Promotes healthy digestion and detoxification.'
+  },
+  {
+    id: 2,
+    name: 'Fresh Terere (Amaranth) , Net: 1kg',
+    category: 'Fresh Vegetables',
+    price: 200,
+    image: `${import.meta.env.BASE_URL}images/terere-fresh.png`,
+    description: 'High in iron to prevent anemia. Loaded with antioxidants for glowing skin.'
+  },
+  {
+    id: 3,
+    name: 'Fresh Sagaa (Spider Plant) , Net: 1kg',
+    category: 'Fresh Vegetables',
+    price: 200,
+    image: `${import.meta.env.BASE_URL}images/spider-plant.png`,
+    description: 'Helps regulate blood sugar. Excellent fiber source for gut health.'
+  },
+  {
+    id: 4,
+    name: 'Fresh Spinach , Net: 1kg',
+    category: 'Fresh Vegetables',
+    price: 150,
+    image: `${import.meta.env.BASE_URL}images/spider-plant.png`,
+    description: 'Rich in iron and folate for energy. Strengthens bones with natural calcium.'
+  },
+  {
+    id: 5,
+    name: 'Fresh Oyster Mushrooms , Net: 250g',
+    category: 'Fresh Vegetables',
+    price: 250,
+    image: `${import.meta.env.BASE_URL}images/fresh-mushroom.jpg`,
+    description: 'Boosts immunity with beta-glucans. Low in calories, great for weight control.'
+  },
 
-// Dried Vegetables
-{ id: 6, name: 'Dried Managu (Black Nightshade) , Net: 50g', category: 'Dried Vegetables',price: 200, image: './Managu-600x400.png', description: 'Sun-dried and nutrient-packed. Long shelf life for convenient use.' },
-{ id: 7, name: 'Dried Spinach , Net: 50g', category: 'Dried Vegetables', price: 150, image: './Spider-Plant.png', description: 'Retains essential iron and calcium. Ideal for quick, healthy meals.' },
-{ id: 8, name: 'Dried Terere (Amaranth) , Net: 50g', category: 'Dried Vegetables', price: 200, image: './Terere-600x400.png', description: 'Loaded with Vitamin A for vision and skin. Provides lysine for body repair.' },
-{ id: 9, name: 'Dried Sagaa (Spider Plant) , Net: 50g', category: 'Dried Vegetables', price: 200, image: './Spider-Plant.png', description: 'Naturally preserves nutrients. Supports digestion and appetite.' },
-{ id: 10, name: 'Dried Oyster Mushrooms , Net: 50g', category: 'Dried Vegetables', price: 300, image: './MUSH-Picsart-BackgroundRemover.jpg', description: 'High in protein and fiber. Contains powerful antioxidants for cell health.' },
+  // Dried Vegetables
+  {
+    id: 6,
+    name: 'Dried Managu (Black Nightshade) , Net: 50g',
+    category: 'Dried Vegetables',
+    price: 200,
+    image: `${import.meta.env.BASE_URL}images/managu-600x400.png`,
+    description: 'Sun-dried and nutrient-packed. Long shelf life for convenient use.'
+  },
+  {
+    id: 7,
+    name: 'Dried Spinach , Net: 50g',
+    category: 'Dried Vegetables',
+    price: 150,
+    image: `${import.meta.env.BASE_URL}images/spider-plant.png`,
+    description: 'Retains essential iron and calcium. Ideal for quick, healthy meals.'
+  },
+  {
+    id: 8,
+    name: 'Dried Terere (Amaranth) , Net: 50g',
+    category: 'Dried Vegetables',
+    price: 200,
+    image: `${import.meta.env.BASE_URL}images/terere-600x400.png`,
+    description: 'Loaded with Vitamin A for vision and skin. Provides lysine for body repair.'
+  },
+  {
+    id: 9,
+    name: 'Dried Sagaa (Spider Plant) , Net: 50g',
+    category: 'Dried Vegetables',
+    price: 200,
+    image: `${import.meta.env.BASE_URL}images/spider-plant.png`,
+    description: 'Naturally preserves nutrients. Supports digestion and appetite.'
+  },
+  {
+    id: 10,
+    name: 'Dried Oyster Mushrooms , Net: 50g',
+    category: 'Dried Vegetables',
+    price: 300,
+    image: `${import.meta.env.BASE_URL}images/mushroom-picsart.jpg`,
+    description: 'High in protein and fiber. Contains powerful antioxidants for cell health.'
+  },
 
-// Spices & Herbs
-{ id: 11, name: 'Rosemary Pure Ground , Net: 50g', category: 'Spices & Herbs', price: 90, image: './spices.jpg', description: 'Improves memory and focus. Fights inflammation and supports joint health.' },
-{ id: 12, name: 'Garlic Pure Ground , Net: 50g', category: 'Spices & Herbs', price: 120, image: './spices.jpg', description: 'Naturally lowers blood pressure. Boosts the immune system.' },
-{ id: 13, name: 'Ginger Pure Ground , Net: 50g', category: 'Spices & Herbs', price: 100, image: './spices.jpg', description: 'Relieves nausea and supports digestion. Anti-inflammatory and immunity booster.' },
-{ id: 14, name: 'Cinnamon Pure Ground , Net: 50g', category: 'Spices & Herbs', price: 110, image: './spices.jpg', description: 'Balances blood sugar levels. Packed with powerful antioxidants.' },
-{ id: 15, name: 'Cayenne Pepper Pure Ground , Net: 50g', category: 'Spices & Herbs', price: 90, image: './spices.jpg', description: 'Speeds up metabolism and burns fat. Clears sinuses and boosts circulation.' },
-
+  // Spices & Herbs
+  {
+    id: 11,
+    name: 'Rosemary Pure Ground , Net: 50g',
+    category: 'Spices & Herbs',
+    price: 90,
+    image: `${import.meta.env.BASE_URL}images/spices.jpg`,
+    description: 'Improves memory and focus. Fights inflammation and supports joint health.'
+  },
+  {
+    id: 12,
+    name: 'Garlic Pure Ground , Net: 50g',
+    category: 'Spices & Herbs',
+    price: 120,
+    image: `${import.meta.env.BASE_URL}images/spices.jpg`,
+    description: 'Naturally lowers blood pressure. Boosts the immune system.'
+  },
+  {
+    id: 13,
+    name: 'Ginger Pure Ground , Net: 50g',
+    category: 'Spices & Herbs',
+    price: 100,
+    image: `${import.meta.env.BASE_URL}images/spices.jpg`,
+    description: 'Relieves nausea and supports digestion. Anti-inflammatory and immunity booster.'
+  },
+  {
+    id: 14,
+    name: 'Cinnamon Pure Ground , Net: 50g',
+    category: 'Spices & Herbs',
+    price: 110,
+    image: `${import.meta.env.BASE_URL}images/spices.jpg`,
+    description: 'Balances blood sugar levels. Packed with powerful antioxidants.'
+  },
+  {
+    id: 15,
+    name: 'Cayenne Pepper Pure Ground , Net: 50g',
+    category: 'Spices & Herbs',
+    price: 90,
+    image: `${import.meta.env.BASE_URL}images/spices.jpg`,
+    description: 'Speeds up metabolism and burns fat. Clears sinuses and boosts circulation.'
+  }
 ];
 
 const ProductsPage: React.FC = () => {
