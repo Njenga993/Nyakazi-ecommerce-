@@ -20,7 +20,7 @@ const Footer = () => {
             <div className="col-lg-3 col-md-6">
               <div className="footer-brand mb-4">
                 <a href="index.html">
-                  <img src="/logo_processed.jpg" alt="Nyakazi Organics" className="footer-logo" />
+                  <img src="public/logo_processed.jpg" alt="Nyakazi Organics" className="footer-logo" />
                 </a>
               </div>
               <p className="footer-tagline">
@@ -31,7 +31,7 @@ const Footer = () => {
                   <i className="fab fa-whatsapp"></i>
                   <span className="pulse-effect"></span>
                 </a>
-                <a href="#" className="footer-social-link" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/nyakaziorganics/" className="footer-social-link" target="_blank" rel="noopener noreferrer">
                   <i className="fab fa-instagram"></i>
                 </a>
                 <a href="#" className="footer-social-link" target="_blank" rel="noopener noreferrer">

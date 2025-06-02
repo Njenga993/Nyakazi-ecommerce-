@@ -27,6 +27,6 @@ function App() {
     if (loading) {
         return _jsx(Loader, {});
     }
-    return (_jsx(CartProvider, { children: _jsxs("div", { className: "App", children: [showLayout && _jsx(Navbar, {}), _jsxs(Routes, { children: [_jsx(Route, { path: "/", element: _jsx(HomePage, {}) }), _jsx(Route, { path: "/blog", element: _jsx(BlogPage, {}) }), _jsx(Route, { path: "/products", element: _jsx(ProductsPage, {}) })] }), showLayout && _jsx(Footer, {})] }) }));
+    return (_jsx(CartProvider, { children: _jsxs("div", { className: "App", children: [showLayout && _jsx(Navbar, {}), _jsxs(Routes, { children: [_jsx(Route, { path: "/Nyakazi-ecommerce-", element: _jsx(HomePage, {}) }), _jsx(Route, { path: "/blog", element: _jsx(BlogPage, {}) }), _jsx(Route, { path: "/products", element: _jsx(ProductsPage, {}) })] }), showLayout && _jsx(Footer, {})] }) }));
 }
 export default App;
