@@ -13,7 +13,7 @@ const dummyProducts: Product[] = [
     name: 'Fresh Managu (Black Nightshade) , Net: 1kg',
     category: 'Fresh Vegetables',
     price: 200,
-    image: `${import.meta.env.BASE_URL}./managu-600x400.png`,
+    image: `${import.meta.env.BASE_URL}./Managu-600x400.png`,
     description: 'Rich in vitamins A and C for immunity support. Promotes healthy digestion and detoxification.'
   },
   {
@@ -21,7 +21,7 @@ const dummyProducts: Product[] = [
     name: 'Fresh Terere (Amaranth) , Net: 1kg',
     category: 'Fresh Vegetables',
     price: 200,
-    image: `${import.meta.env.BASE_URL}./terere-fresh.png`,
+    image: `${import.meta.env.BASE_URL}./terere fresh.png`,
     description: 'High in iron to prevent anemia. Loaded with antioxidants for glowing skin.'
   },
   {
@@ -29,7 +29,7 @@ const dummyProducts: Product[] = [
     name: 'Fresh Sagaa (Spider Plant) , Net: 1kg',
     category: 'Fresh Vegetables',
     price: 200,
-    image: `${import.meta.env.BASE_URL}./spider-plant.png`,
+    image: `${import.meta.env.BASE_URL}./Spider-plant.png`,
     description: 'Helps regulate blood sugar. Excellent fiber source for gut health.'
   },
   {
@@ -37,7 +37,7 @@ const dummyProducts: Product[] = [
     name: 'Fresh Spinach , Net: 1kg',
     category: 'Fresh Vegetables',
     price: 150,
-    image: `${import.meta.env.BASE_URL}./spider-plant.png`,
+    image: `${import.meta.env.BASE_URL}./Spider-plant.png`,
     description: 'Rich in iron and folate for energy. Strengthens bones with natural calcium.'
   },
   {
@@ -45,7 +45,7 @@ const dummyProducts: Product[] = [
     name: 'Fresh Oyster Mushrooms , Net: 250g',
     category: 'Fresh Vegetables',
     price: 250,
-    image: `${import.meta.env.BASE_URL}./fresh-mushroom.jpg`,
+    image: `${import.meta.env.BASE_URL}./FreshMushroom.jpeg`,
     description: 'Boosts immunity with beta-glucans. Low in calories, great for weight control.'
   },
 
@@ -55,7 +55,7 @@ const dummyProducts: Product[] = [
     name: 'Dried Managu (Black Nightshade) , Net: 50g',
     category: 'Dried Vegetables',
     price: 200,
-    image: `${import.meta.env.BASE_URL}./managu-600x400.png`,
+    image: `${import.meta.env.BASE_URL}./Managu-600x400.png`,
     description: 'Sun-dried and nutrient-packed. Long shelf life for convenient use.'
   },
   {
@@ -63,7 +63,7 @@ const dummyProducts: Product[] = [
     name: 'Dried Spinach , Net: 50g',
     category: 'Dried Vegetables',
     price: 150,
-    image: `${import.meta.env.BASE_URL}./spider-plant.png`,
+    image: `${import.meta.env.BASE_URL}./Spider-plant.png`,
     description: 'Retains essential iron and calcium. Ideal for quick, healthy meals.'
   },
   {
@@ -71,7 +71,7 @@ const dummyProducts: Product[] = [
     name: 'Dried Terere (Amaranth) , Net: 50g',
     category: 'Dried Vegetables',
     price: 200,
-    image: `${import.meta.env.BASE_URL}./terere-600x400.png`,
+    image: `${import.meta.env.BASE_URL}./Terere-600x400.png`,
     description: 'Loaded with Vitamin A for vision and skin. Provides lysine for body repair.'
   },
   {
@@ -79,7 +79,7 @@ const dummyProducts: Product[] = [
     name: 'Dried Sagaa (Spider Plant) , Net: 50g',
     category: 'Dried Vegetables',
     price: 200,
-    image: `${import.meta.env.BASE_URL}./spider-plant.png`,
+    image: `${import.meta.env.BASE_URL}./Spider-plant.png`,
     description: 'Naturally preserves nutrients. Supports digestion and appetite.'
   },
   {
@@ -87,7 +87,7 @@ const dummyProducts: Product[] = [
     name: 'Dried Oyster Mushrooms , Net: 50g',
     category: 'Dried Vegetables',
     price: 300,
-    image: `${import.meta.env.BASE_URL}./mushroom-picsart.jpg`,
+    image: `${import.meta.env.BASE_URL}../MUSH-Picsart-BackgroundRemover.jpg`,
     description: 'High in protein and fiber. Contains powerful antioxidants for cell health.'
   },
 
