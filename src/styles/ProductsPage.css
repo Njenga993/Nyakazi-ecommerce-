@@ -124,3 +124,44 @@
     font-size: 0.9rem;
   }
 }
+/* Add this to your ProductsPage.css file */
+
+.floating-cart-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, #28a745, #20c997);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 15px 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(40, 167, 69, 0.3);
+  transition: all 0.3s ease;
+  z-index: 1000;
+  min-width: 150px;
+  text-align: center;
+}
+
+.floating-cart-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(40, 167, 69, 0.4);
+  background: linear-gradient(135deg, #218838, #1e7e34);
+}
+
+.floating-cart-btn:active {
+  transform: translateY(0px);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .floating-cart-btn {
+    bottom: 15px;
+    right: 15px;
+    padding: 12px 20px;
+    font-size: 14px;
+    min-width: 130px;
+  }
+}
