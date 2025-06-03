@@ -29,7 +29,7 @@
 
 ## 🧪 Demo
 
-> **Live demo coming soon...**
+> **Live demo - https://njenga993.github.io/Nyakazi-ecommerce-/**
 
 You can include a GIF or screenshot here showing:
 
