@@ -4,7 +4,7 @@
 ![React](https://img.shields.io/badge/React-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![TypeScript](https://img.shields.io/badge/TypeScript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![Status](https://img.shields.io/badge/Live%20Demo-Coming%20Soon-orange?style=for-the-badge)
+![Status](https://img.shields.io/badge/Live%20Demo-https://njenga993.github.io/Nyakazi-ecommerce-/)-orange?style=for-the-badge)
 
 ---
 
