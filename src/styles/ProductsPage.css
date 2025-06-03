@@ -95,6 +95,16 @@
 .product-card button:hover {
   background-color: #689f38;
 }
+.product-card button:active {
+  transform: scale(0.98);
+}
+.product-card button.added {
+  background-color: #2e7d32;
+}
+.product-card button.added:hover {
+  background-color: #1b5e20;
+}
+
 
 /* Responsive tweaks */
 @media (max-width: 768px) {
