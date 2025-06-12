@@ -26,7 +26,7 @@ body {
 
 /* Announcement bar */
 .announcement-bar {
-  background-color: var(--primary-green);
+  background: linear-gradient(135deg, #28a745, #101815);
   color: white;
   font-size: 0.9rem;
   padding: 8px 0;
@@ -60,7 +60,7 @@ body {
 
 /* Main navbar */
 .organic-navbar {
-  background-color: white;
+  background: #f7f4f4;
   transition: all var(--transition-speed) ease;
   padding: 0;
 }

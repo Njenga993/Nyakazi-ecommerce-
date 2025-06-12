@@ -92,7 +92,7 @@
 }
 
 .content-tag {
-  background-color: #2e7d32;
+  background: linear-gradient(135deg, #28a745, #101815);
   color: white;
   padding: 0.5rem 1.2rem;
   border-radius: 30px;
@@ -177,7 +177,7 @@
 }
 
 .notice-badge {
-  background-color: #4caf50;
+  background: linear-gradient(135deg, #28a745, #101815);
   color: white;
   padding: 0.35rem 0.8rem;
   border-radius: 20px;
@@ -248,7 +248,7 @@
 }
 
 .primary-btn {
-  background-color: #2e7d32;
+ background: linear-gradient(135deg, #28a745, #101815);
   color: #fff;
   box-shadow: 0 4px 12px rgba(46, 125, 50, 0.2);
 }
@@ -259,7 +259,7 @@
 }
 
 .primary-btn:hover {
-  background-color: #1b5e20;
+  background: linear-gradient(135deg, #28a745, #06e764);
   box-shadow: 0 6px 16px rgba(46, 125, 50, 0.3);
   color: #fff;
 }

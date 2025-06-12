@@ -10,7 +10,7 @@ const dummyProducts: Product[] = [
  // Fresh Vegetables
   {
     id: 1,
-    name: 'Fresh Managu (Black Nightshade) , Net: 1kg',
+    name: 'Sorted Fresh Managu (Black Nightshade) , Net: 1kg',
     category: 'Fresh Vegetables',
     price: 200,
     image: `${import.meta.env.BASE_URL}./Managu-600x400.png`,
@@ -18,7 +18,7 @@ const dummyProducts: Product[] = [
   },
   {
     id: 2,
-    name: 'Fresh Terere (Amaranth) , Net: 1kg',
+    name: 'Sorted Fresh Terere (Amaranth) , Net: 1kg',
     category: 'Fresh Vegetables',
     price: 200,
     image: `${import.meta.env.BASE_URL}./terere fresh.png`,
@@ -26,7 +26,7 @@ const dummyProducts: Product[] = [
   },
   {
     id: 3,
-    name: 'Fresh Sagaa (Spider Plant) , Net: 1kg',
+    name: 'Sorted Fresh Sagaa (Spider Plant) , Net: 1kg',
     category: 'Fresh Vegetables',
     price: 200,
     image: `${import.meta.env.BASE_URL}./Spider-Plant.png`,
@@ -34,7 +34,7 @@ const dummyProducts: Product[] = [
   },
   {
     id: 4,
-    name: 'Fresh Spinach , Net: 1kg',
+    name: 'Sorted Fresh Spinach , Net: 1kg',
     category: 'Fresh Vegetables',
     price: 150,
     image: `${import.meta.env.BASE_URL}./Spider-Plant.png`,
@@ -42,7 +42,7 @@ const dummyProducts: Product[] = [
   },
   {
     id: 5,
-    name: 'Fresh Oyster Mushrooms , Net: 250g',
+    name: 'Sorted Fresh Oyster Mushrooms , Net: 250g',
     category: 'Fresh Vegetables',
     price: 250,
     image: `${import.meta.env.BASE_URL}./FreshMushroom.jpeg`,

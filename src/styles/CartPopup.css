@@ -46,9 +46,11 @@
 .remove-btn {
   background: none;
   color: crimson;
-  border: none;
+  border: ridge;
   cursor: pointer;
+  outline-color: black;
 }
+
 
 .cart-footer {
   margin-top: 1rem;
@@ -56,7 +58,7 @@
 }
 
 .checkout-btn {
-  background-color: #6b8e23;
+  background: linear-gradient(135deg, #28a745, #101815);
   color: white;
   border: none;
   padding: 0.6rem 1rem;

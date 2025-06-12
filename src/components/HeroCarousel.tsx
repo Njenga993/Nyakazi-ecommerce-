@@ -12,8 +12,8 @@ const slides = [
     description: "At Nyakazi Organics, we bring you premium organic vegetables from small-scale farmers across Our Beloved Country. Our youth-led social enterprise is committed to sustainable farming and community development.",
     primaryText: "Contact Us",
     primaryLink: "mailto:nyakaziorganics@gmail.com",
-    secondaryText: "View Products",
-    secondaryLink: "Products",
+    secondaryText: "Learn More",
+    secondaryLink: "#about",
     image: managuImg,
     alt: "Fresh Managu"
   },

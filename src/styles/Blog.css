@@ -93,7 +93,7 @@
   position: absolute;
   top: 1rem;
   left: 1rem;
-  background: #2e7d32;
+  background: linear-gradient(135deg, #28a745, #101815);
   color: white;
   padding: 0.3rem 1rem;
   border-radius: 50px;
@@ -164,7 +164,7 @@
 
 .category-filter button {
   padding: 0.6rem 1.2rem;
-  background: #0e0404;
+  background: linear-gradient(135deg, #28a745, #101815);
   border: none;
   border-radius: 50px;
   cursor: pointer;
@@ -173,11 +173,11 @@
 }
 
 .category-filter button:hover {
-  background: #e0e0e0;
+  background: linear-gradient(135deg, #28a745, #06ad4b);
 }
 
 .category-filter button.active {
-  background: #2e7d32;
+  background: linear-gradient(135deg, #f4f5f4, #101815);
   color: white;
 }
 

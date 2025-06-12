@@ -206,7 +206,7 @@ const Footer = () => {
               <p className="mb-0">Copyright © {new Date().getFullYear()} NYAKAZI ORGANICS | All Rights Reserved</p>
             </div>
             <div className="col-md-6 text-md-end">
-              <p className="mb-0">Design & Developed by <a href="https://techlungs.co.ke/" target="_blank" rel="noopener noreferrer" className="designer-link">Techlungs</a></p>
+              <p className="mb-0">Design & Developed by <a href="https://njenga993.github.io/kspace/" target="_blank" rel="noopener noreferrer" className="designer-link">KAMAU</a></p>
             </div>
           </div>
         </div>

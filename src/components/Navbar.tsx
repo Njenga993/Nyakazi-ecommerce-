@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
             <div className="col-12 text-center">
               <p className="mb-0">
                 <span className="highlight-text">New!</span> Organic Spices and Herbs now available.{" "}
-                <a><Link to="/products" className="highlight-text" data-text="Products"> Shop Now! </Link></a>
+                <Link to="/products" className="highlight-text" data-text="Products"> Shop Now! </Link>
               </p>
             </div>
           </div>

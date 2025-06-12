@@ -15,28 +15,28 @@
   margin-bottom: 1rem;
 }
 
-.category-filter {
+.category-nav {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 0.75rem;
   margin-bottom: 2rem;
+
 }
 
-.category-filter button {
+.category-nav button {
   padding: 0.5rem 1.25rem;
   border: 1px solid #b2c7a2;
   border-radius: 20px;
-  background-color: #e6f3df;
-  color: #0a7a0a;
+  background: linear-gradient(135deg, #28a745, #101815);
   font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
-.category-filter button.active,
-.category-filter button:hover {
-  background-color: #8bc34a;
+.category-nav button.active,
+.category-nav button:hover {
+  background: linear-gradient(135deg, #070c08, #f9faf9);
   color: white;
   border-color: #8bc34a;
 }
@@ -82,7 +82,7 @@
 }
 
 .product-card button {
-  background-color: #8bc34a;
+  background: linear-gradient(135deg, #28a745, #101815);
   color: white;
   border: none;
   padding: 0.5rem 1.2rem;
@@ -93,7 +93,7 @@
 }
 
 .product-card button:hover {
-  background-color: #689f38;
+  background: linear-gradient(135deg, #218838, #1e7e34);
 }
 .product-card button:active {
   transform: scale(0.98);
@@ -130,7 +130,7 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: linear-gradient(135deg, #28a745, #20c997);
+  background: linear-gradient(135deg, #28a745, #101815);
   color: white;
   border: none;
   border-radius: 25px;
