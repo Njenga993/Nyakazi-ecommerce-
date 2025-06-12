@@ -1,10 +1,7 @@
-import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { jsx as _jsx } from "react/jsx-runtime";
 import BlogSection from '../components/BlogSection';
-import HeroCarousel from '../components/HeroCarousel';
-import AboutSection from '../components/AboutSection';
-import PillarsSection from '../components/PillarsSection';
-import ContactSection from '../components/ContactSection';
+import '../styles/BlogPage.css'; // Assuming you have a CSS file for styling
 const BlogPage = () => {
-    return (_jsxs("div", { className: "blog-page-wrapper", children: [_jsx(BlogSection, {}), _jsx(HeroCarousel, {}), _jsx(AboutSection, {}), _jsx(PillarsSection, {}), _jsx(ContactSection, {})] }));
+    return (_jsx("div", { className: "blog-page-wrapper", children: _jsx(BlogSection, {}) }));
 };
 export default BlogPage;
